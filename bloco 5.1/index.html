@@ -97,46 +97,28 @@
             let normalText = document.getElementsByTagName('p')[index].innerText;
             
             bigText = normalText.toUpperCase(); 
-            console.log(bigText);
-
             allP[index].innerText = bigText;
           }
         }
 
         upLetter();
 
-          //vou pegar todos os paragrafos. Atraves desse elemento (com os paragrafos) vou acessar todos os valores de texto pelo for. Vo tranformar esses valores em maiusculos e guarda-los em outraa variavel o texto, mudar para maiusculo salvando no caminho do paragrafo  
+          //-vou pegar todos os paragrafos p usar seu length. -Vou criar uma variavel com o texto dos paragrafos. -Vou acessar todos os valores de texto pelo for e Vou tranformar esses valores em maiusculos e guarda-los em outraa variavel.
+          //Vou acessar o paragrafo com o texto e atribuir a variavel com esse texto maiusculo
+           
 
-
-       
-
-
-
-            // console.log(originalText);
-
-            // consolle.log(originalText.toUpperCase());
-          
-        
-
-      // function upLetter() {
-      //   let allP = document.getElementsByTagName ('p');
-
-      //   for ( let count = 0 ; count < allP.length ; count +=1 ) {
-      //     let text = allP[count].innerText
-      //     console.log(text);
-
-      //   text.toUpperCase();
-
-      // }
-      // upLetter();
-      // // for ( let index = 0 ; index < allP.length ; index += 1 ) {
-      // //   allP[0].innerText.toUpperCase();
-      // // }
-      // //   }
-
-      
 
       // // [_6_] Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        function showP(){
+          let paragraphs = document.getElementsByTagName('p');
+
+          for ( let index = 0 ; index < paragraphs.length ; index += 1) {
+            console.log (paragraphs[index].innerHTML);
+          }
+
+        }
+
+        showP();
       // //         
     </script>
   </body>
