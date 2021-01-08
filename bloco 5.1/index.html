@@ -39,58 +39,105 @@
       </div>
     </div>
     <script>
-        /*
-        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
-        - document.getElementById()
-        - document.getElementsByClassName()
-        - document.getElementsByTagName()
+              /*
+              Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+              - document.getElementById()
+              - document.getElementsByClassName()
+              - document.getElementsByTagName()
 
- [_1_] Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)*/
+      [_1_] Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)*/
 
-function changeText() {
-  let targetP = document.getElementsByTagName('p');
-  targetP[1].innerText = "Estarei morando no litoral paulista,trabalhando via Home Office em uma grande empresa de Tecnologia cujo objetivo é impactar positivamente a vida dos Brasileiros."
-}
+      function changeText() {
+        let targetP = document.getElementsByTagName('p');
+        targetP[1].innerText = "Estarei morando no litoral paulista,trabalhando via Home Office em uma grande empresa de Tecnologia cujo objetivo é impactar positivamente a vida dos Brasileiros."
+      }
 
-  changeText()
+        changeText()
 
 
-// [_2_]  Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109))
+      // [_2_]  Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109))
 
-function changeSquareColor() {
-  //Metodo criando variavel
-  // let bigSquare = document.querySelector('.main-content');
-  // bigSquare.style.backgroundColor = "rgb(76, 164, 109)"
-  
-  //Metodo direto em uma linha
-  document.querySelector('.main-content').style.backgroundColor = "rgb(76, 164, 109)"
-}
+      function changeSquareColor() {
+        //Metodo criando variavel
+        // let bigSquare = document.querySelector('.main-content');
+        // bigSquare.style.backgroundColor = "rgb(76, 164, 109)"
+        
+        //Metodo direto em uma linha
+        document.querySelector('.main-content').style.backgroundColor = "rgb(76, 164, 109)"
+      }
 
-changeSquareColor();
+      changeSquareColor();
 
-// [_3_]  Crie uma função que mude a cor do quadrado vermelho para branco.
+      // [_3_]  Crie uma função que mude a cor do quadrado vermelho para branco.
 
-function changeSmallSquareColor() {
-  document.querySelector('.center-content').style.backgroundColor = 'white';
-}
+      function changeSmallSquareColor() {
+        document.querySelector('.center-content').style.backgroundColor = 'white';
+      }
 
-changeSmallSquareColor()
+      changeSmallSquareColor()
 
-// [_4_]  Crie uma função que corrija o texto da tag <h1>.
-function correctText() {
-  let correctText = document.getElementsByClassName('title');
+      // [_4_]  Crie uma função que corrija o texto da tag <h1>.
+      function correctText() {
+        let correctText = document.getElementsByClassName('title');
 
-  correctText[0].innerText = "Exercício 5.1 - Javascript"
+        correctText[0].innerText = "Exercício 5.1 - Javascript"
 
-}
+      }
 
-correctText();
-  
+      correctText();
+        
 
-//  [_5_] Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+      // //  [_5_] Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
 
-// [_6_] Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-//         
+        function upLetter() {
+          
+          let allP = document.getElementsByTagName('p');
+
+          for ( let index = 0 ; index < allP.length ; index += 1) {
+            let normalText = document.getElementsByTagName('p')[index].innerText;
+            
+            bigText = normalText.toUpperCase(); 
+            console.log(bigText);
+
+            allP[index].innerText = bigText;
+          }
+        }
+
+        upLetter();
+
+          //vou pegar todos os paragrafos. Atraves desse elemento (com os paragrafos) vou acessar todos os valores de texto pelo for. Vo tranformar esses valores em maiusculos e guarda-los em outraa variavel o texto, mudar para maiusculo salvando no caminho do paragrafo  
+
+
+       
+
+
+
+            // console.log(originalText);
+
+            // consolle.log(originalText.toUpperCase());
+          
+        
+
+      // function upLetter() {
+      //   let allP = document.getElementsByTagName ('p');
+
+      //   for ( let count = 0 ; count < allP.length ; count +=1 ) {
+      //     let text = allP[count].innerText
+      //     console.log(text);
+
+      //   text.toUpperCase();
+
+      // }
+      // upLetter();
+      // // for ( let index = 0 ; index < allP.length ; index += 1 ) {
+      // //   allP[0].innerText.toUpperCase();
+      // // }
+      // //   }
+
+      
+
+      // // [_6_] Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+      // //         
     </script>
   </body>
 </html>
