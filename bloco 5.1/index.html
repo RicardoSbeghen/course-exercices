@@ -45,21 +45,36 @@
         - document.getElementsByClassName()
         - document.getElementsByTagName()
 
- Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)*/
+ [_1_] Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)*/
 
 function changeText() {
   let targetP = document.getElementsByTagName('p');
   targetP[1].innerText = "Estarei morando no litoral paulista,trabalhando via Home Office em uma grande empresa de Tecnologia cujo objetivo é impactar positivamente a vida dos Brasileiros."
 }
 
-changeText()
+  changeText()
 
 
-//  Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
-//  Crie uma função que mude a cor do quadrado vermelho para branco.
-//  Crie uma função que corrija o texto da tag <h1>.
-//  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-//  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+// [_2_]  Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109))
+
+function changeSquareColor() {
+  //Metodo criando variavel
+  // let bigSquare = document.querySelector('.main-content');
+  // bigSquare.style.backgroundColor = "rgb(76, 164, 109)"
+  
+  //Metodo direto em uma linha
+  document.querySelector('.main-content').style.backgroundColor = "rgb(76, 164, 109)"
+}
+
+changeSquareColor();
+
+// [_3_]  Crie uma função que mude a cor do quadrado vermelho para branco.
+
+// [_4_]  Crie uma função que corrija o texto da tag <h1>.
+
+//  [_5_] Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+
+// [_6_] Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 //         
     </script>
   </body>
