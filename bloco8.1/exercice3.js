@@ -75,13 +75,6 @@ const expectedResult = {
 };
 
 function getNamedBook() {
-    let nameBook;
-
-    books.find(element => { 
-        
-    })
-
-
   // escreva seu código aqui
 }
 
